@@ -1,0 +1,50 @@
+<view>
+
+<view >
+ 
+    <block >
+     
+        <image src="{{itemUrl}}" class="slide-image" />
+    
+    </block>
+
+</view>
+<view class="goods_infor_top">
+  <view class="goods_title">
+    {{cakename}}
+    <view class="goods_collect_btn" bindtap="collect">
+      <view wx:if="{{iscollect}}">
+        <image src="../../image/icon-aixin.png" class="goods_collect_img"></image>
+      </view>
+      <view wx:else>
+        <image src="../../image/icon-aixin1.png" class="goods_collect_img"></image>
+      </view> 
+      <text wx:if="{{iscollect}}">已收藏</text>
+      <text wx:else>收藏</text>
+    </view>
+  </view>
+  <view class="goods_price">
+    <text>¥{{cakeprice}}</text>
+    
+  </view>
+  <view class="goods_deliver">
+    *本产品由 品牌商 提供发货服务。
+  </view>
+</view>
+<view class="goods_infor_pre">
+  <view class="goods_infor_txt">
+    <view class="goods_infor_brand"></view>
+    <text>非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！非常好吃！</text>
+  </view>
+</view>
+</view>
+
+
+<view class="goods_bottom_btn">
+  
+    
+   
+<button class="goods_half_half red" bindtap="addcake">加入购物车</button>
+   
+  
+</view>

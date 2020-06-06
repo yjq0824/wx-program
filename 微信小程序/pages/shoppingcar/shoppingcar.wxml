@@ -1,0 +1,29 @@
+<view>
+    <view class="car_item_wrap" wx:for="{{carArray}}">
+        <view class="car_image_wrap">
+            <image src="{{itemUrl}}" class="car_item_image"></image>
+        </view>
+        <view class="car_item_title">
+            <view>{{cakename}}</view>
+        </view>
+        <view class="car_item_bot">
+        	<text class="car_item_price">单价：{{cakeprice}}RMB</text>
+        	<!-- <span class="car_item_del" data-alpha-beta="0" bindtap="carRemove">
+					<image class="car_item_del" src="../../image/shanchu.png"></image>
+					</span> -->
+	        <span class="car_item_operate">
+	        	<span class="car_item_reduce car_item_btn"  bindtap="carReduce">-</span>
+	        	<span class="car_item_num" data-alpha-beta="0" bindtap="carRemove">{{carNum}}</span>
+	        	<span class="car_item_add car_item_btn"  bindtap="carAdd">+</span>
+	        </span>
+        </view>
+    </view>
+</view>
+
+<view class="car_bot">
+	<view class="car_bot_wrap">
+		总价
+		<span class="car_order_confirm" bindtap="toPay">下单</span>
+		<span class="car_total_money">￥{{carNum*cakeprice}}元</span>
+	</view>
+</view>

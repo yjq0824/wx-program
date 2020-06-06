@@ -1,0 +1,18 @@
+
+<view class="userinfo">
+<view class="userinfo-avatar">
+<open-data type="userAvatarUrl"></open-data>
+</view>
+<open-data type="userNickName"></open-data>
+</view>
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
+<view class="wode_item_wrap">
+	<view class="wode_item" wx:for="{{mode}}">
+		{{item}}
+		<span class="arrow_wrap"> 
+		<image src="../../image/icon-arrow.png"></image>
+		</span>
+	</view>
+</view>
+<view class="wode_out">退出</view>

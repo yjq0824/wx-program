@@ -1,0 +1,40 @@
+<view class="pay_address_wrap">
+	<view class="address_icon">
+	<image class="address_icon" src="../../image/icon-dw.png"></image>
+	</view>
+	<view class="pay_address">
+		<view class="pay_contact">
+			<span>联系方式：</span>
+			<span>15179740282</span>
+		</view>
+		<view>
+			 华东交通大学北区
+		</view>
+	</view>
+
+</view>
+<view class="pay_order_wrap">
+	<view class="table_header">
+		<span class="table_goods_name">商品</span>
+		<span class="table_goods_num">数量</span>
+		<span class="table_goods_con">总价</span>
+	</view>
+	<view class="table_content">
+		<view class="table_content_item">
+			<span class="table_goods_name">{{b_cakename}}</span>
+			<span class="table_goods_num">{{b_carNum}}个</span>
+			<span class="table_goods_con">￥{{b_carNum*b_cakeprice}}</span>
+		</view>
+	
+	</view>
+</view>
+<view class="pay_remarks">
+	<input placeholder="填写备注" type="text" />
+</view>
+<view class="car_bot">
+	<view class="car_bot_wrap">
+		总价
+		<span class="car_order_confirm" bindtap="toPay">前往支付</span>
+		<span class="car_total_money">￥{{b_carNum*b_cakeprice}}</span>
+	</view>
+</view>

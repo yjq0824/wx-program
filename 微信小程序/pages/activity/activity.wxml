@@ -1,0 +1,64 @@
+<view class="active_block">
+    <view class="active_item_title">
+        <view class="active_title_wrap">
+            <view class="active_title">限时折扣</view>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../image/activity-1.jpg" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+        </view>
+        <view class="active_goods_name">
+            草莓黑糖蛋糕
+        </view>
+        <view class="active_item_infor">
+            <text class="active_new_price">¥95</text>
+            <text class="active_old_price">¥190</text>
+            <text class="active_time active_new_price">限时3天</text>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../image/activity-2.jpg" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+        </view>
+        <view class="active_goods_name">
+            冰糖奶油蛋挞
+        </view>
+        <view class="active_item_infor">
+            <text class="active_new_price">¥35</text>
+            <text class="active_old_price">¥88</text>
+            <text class="active_time active_new_price">限时3天</text>
+        </view>
+    </view>
+</view>
+<view>
+    <view class="active_item_title">
+        <view class="active_title_wrap">
+            <view class="active_title">参加团购</view>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../image/activity-3.jpg" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+        </view>
+        <view class="active_goods_name">
+            新款纸杯椰蓉红珍珠蛋糕
+        </view>
+        <view class="active_item_infor">
+            <text class="active_group_price">团购价¥90</text>
+            <text class="active_time">三人团</text>
+        </view>
+    </view>
+    <view class="active_item">
+        <view>
+            <image bindload="cusImageLoad" src="../../image/activity-4.jpg" style="width: {{imageWidth}};height: {{imageHeight}}"></image>
+        </view>
+        <view class="active_goods_name">
+            冰镇柠檬白巧克力蛋糕
+        </view>
+        <view class="active_item_infor">
+            <text class="active_group_price">团购价¥80</text>
+            <text class="active_time">四人团</text>
+        </view>
+    </view>
+</view>
